@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnVerse - E-Learning App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <style>
+        /* Estilos personalizados para a barra no topo, mantidos aqui por simplicidade */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="mostrarPagina('inicio')">Bem-Vindo</a></li>
+                <li><a href="#" onclick="mostrarPagina('cursos')">Cursos</a></li>
+                <li><a href="#" onclick="mostrarPagina('ajuda')">Ajuda</a></li>
+            </ul>
+        </nav>
+        <div class="barra-de-busca">
+            <input type="text" id="barra-de-busca" placeholder="Buscar por curso">
+            <button onclick="buscarCursos()">Buscar</button>
+        </div>
+    </header>
+    
+    <main>
+        <div id="conteudo-dinamico">
+            <!-- Conteúdo dinâmico será carregado aqui -->
+        </div>
+    </main>
+
+    <footer>
+        <!-- Rodapé -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
